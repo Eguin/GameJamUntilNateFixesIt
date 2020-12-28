@@ -1,0 +1,495 @@
+fileFormatVersion: 2
+guid: fff5d56fd04e9df46894e19e9cc4d339
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Body1
+    100002: Body1 (1) (1) (5)
+    100004: Body1 (1) (1) (5) (1)
+    100006: Body1 (1) (1) (5) (10)
+    100008: Body1 (1) (1) (5) (11)
+    100010: Body1 (1) (1) (5) (12)
+    100012: Body1 (1) (1) (5) (13)
+    100014: Body1 (1) (1) (5) (14)
+    100016: Body1 (1) (1) (5) (15)
+    100018: Body1 (1) (1) (5) (16)
+    100020: Body1 (1) (1) (5) (17)
+    100022: Body1 (1) (1) (5) (18)
+    100024: Body1 (1) (1) (5) (19)
+    100026: Body1 (1) (1) (5) (2)
+    100028: Body1 (1) (1) (5) (20)
+    100030: Body1 (1) (1) (5) (21)
+    100032: Body1 (1) (1) (5) (22)
+    100034: Body1 (1) (1) (5) (23)
+    100036: Body1 (1) (1) (5) (24)
+    100038: Body1 (1) (1) (5) (25)
+    100040: Body1 (1) (1) (5) (26)
+    100042: Body1 (1) (1) (5) (27)
+    100044: Body1 (1) (1) (5) (3)
+    100046: Body1 (1) (1) (5) (4)
+    100048: Body1 (1) (1) (5) (5)
+    100050: Body1 (1) (1) (5) (6)
+    100052: Body1 (1) (1) (5) (7)
+    100054: Body1 (1) (1) (5) (8)
+    100056: Body1 (1) (1) (5) (9)
+    100058: Body1 (1) (4)
+    100060: Body1 (1) (4) (1)
+    100062: Body1 (1) (4) (2)
+    100064: Body1 (1) (4) (3)
+    100066: Body1 (1) (4) (4)
+    100068: Body1 (1) (5)
+    100070: Body1 (1) (6)
+    100072: Body1 (1) (7)
+    100074: Body1 (1) (8)
+    100076: Body1 (1) (8) (1)
+    100078: Body1 (1) (8) (2)
+    100080: Body1 (1) (8) (3)
+    100082: Body1 (1) (8) (4)
+    100084: Body1 (1) (8) (5)
+    100086: Body1 (1) (8) (6)
+    100088: Body1 (1) (9)
+    100090: Body1 (1) (9) (1)
+    100092: Body1 (1) (9) (2)
+    100094: Body1 (1) (9) (3)
+    100096: Body1 (1) (9) (4)
+    100098: Body100
+    100100: Body101
+    100102: Body102
+    100104: Body103
+    100106: Body104
+    100108: Body105
+    100110: Body106
+    100112: Body107
+    100114: Body108
+    100116: Body109
+    100118: Body110
+    100120: Body111
+    100122: Body112
+    100124: Body113
+    100126: Body114
+    100128: Body115
+    100130: Body116
+    100132: Body117
+    100134: Body118
+    100136: Body119
+    100138: Body120
+    100140: Body121
+    100142: Body122
+    100144: Body123
+    100146: Body124
+    100148: Body125
+    100150: Body95
+    100152: Body96
+    100154: Body97
+    100156: Body98
+    100158: Body99
+    100160: Component1
+    100162: Component1:1
+    100164: //RootNode
+    400000: Body1
+    400002: Body1 (1) (1) (5)
+    400004: Body1 (1) (1) (5) (1)
+    400006: Body1 (1) (1) (5) (10)
+    400008: Body1 (1) (1) (5) (11)
+    400010: Body1 (1) (1) (5) (12)
+    400012: Body1 (1) (1) (5) (13)
+    400014: Body1 (1) (1) (5) (14)
+    400016: Body1 (1) (1) (5) (15)
+    400018: Body1 (1) (1) (5) (16)
+    400020: Body1 (1) (1) (5) (17)
+    400022: Body1 (1) (1) (5) (18)
+    400024: Body1 (1) (1) (5) (19)
+    400026: Body1 (1) (1) (5) (2)
+    400028: Body1 (1) (1) (5) (20)
+    400030: Body1 (1) (1) (5) (21)
+    400032: Body1 (1) (1) (5) (22)
+    400034: Body1 (1) (1) (5) (23)
+    400036: Body1 (1) (1) (5) (24)
+    400038: Body1 (1) (1) (5) (25)
+    400040: Body1 (1) (1) (5) (26)
+    400042: Body1 (1) (1) (5) (27)
+    400044: Body1 (1) (1) (5) (3)
+    400046: Body1 (1) (1) (5) (4)
+    400048: Body1 (1) (1) (5) (5)
+    400050: Body1 (1) (1) (5) (6)
+    400052: Body1 (1) (1) (5) (7)
+    400054: Body1 (1) (1) (5) (8)
+    400056: Body1 (1) (1) (5) (9)
+    400058: Body1 (1) (4)
+    400060: Body1 (1) (4) (1)
+    400062: Body1 (1) (4) (2)
+    400064: Body1 (1) (4) (3)
+    400066: Body1 (1) (4) (4)
+    400068: Body1 (1) (5)
+    400070: Body1 (1) (6)
+    400072: Body1 (1) (7)
+    400074: Body1 (1) (8)
+    400076: Body1 (1) (8) (1)
+    400078: Body1 (1) (8) (2)
+    400080: Body1 (1) (8) (3)
+    400082: Body1 (1) (8) (4)
+    400084: Body1 (1) (8) (5)
+    400086: Body1 (1) (8) (6)
+    400088: Body1 (1) (9)
+    400090: Body1 (1) (9) (1)
+    400092: Body1 (1) (9) (2)
+    400094: Body1 (1) (9) (3)
+    400096: Body1 (1) (9) (4)
+    400098: Body100
+    400100: Body101
+    400102: Body102
+    400104: Body103
+    400106: Body104
+    400108: Body105
+    400110: Body106
+    400112: Body107
+    400114: Body108
+    400116: Body109
+    400118: Body110
+    400120: Body111
+    400122: Body112
+    400124: Body113
+    400126: Body114
+    400128: Body115
+    400130: Body116
+    400132: Body117
+    400134: Body118
+    400136: Body119
+    400138: Body120
+    400140: Body121
+    400142: Body122
+    400144: Body123
+    400146: Body124
+    400148: Body125
+    400150: Body95
+    400152: Body96
+    400154: Body97
+    400156: Body98
+    400158: Body99
+    400160: Component1
+    400162: Component1:1
+    400164: //RootNode
+    2100000: Plastic - Matte (Gray)
+    2100002: Powder Coat - Rough (Red)
+    2100004: Plastic - Matte (Red)
+    2100006: Paint - Enamel Glossy (Yellow)
+    2300000: Body1
+    2300002: Body1 (1) (1) (5)
+    2300004: Body1 (1) (1) (5) (1)
+    2300006: Body1 (1) (1) (5) (10)
+    2300008: Body1 (1) (1) (5) (11)
+    2300010: Body1 (1) (1) (5) (12)
+    2300012: Body1 (1) (1) (5) (13)
+    2300014: Body1 (1) (1) (5) (14)
+    2300016: Body1 (1) (1) (5) (15)
+    2300018: Body1 (1) (1) (5) (16)
+    2300020: Body1 (1) (1) (5) (17)
+    2300022: Body1 (1) (1) (5) (18)
+    2300024: Body1 (1) (1) (5) (19)
+    2300026: Body1 (1) (1) (5) (2)
+    2300028: Body1 (1) (1) (5) (20)
+    2300030: Body1 (1) (1) (5) (21)
+    2300032: Body1 (1) (1) (5) (22)
+    2300034: Body1 (1) (1) (5) (23)
+    2300036: Body1 (1) (1) (5) (24)
+    2300038: Body1 (1) (1) (5) (25)
+    2300040: Body1 (1) (1) (5) (26)
+    2300042: Body1 (1) (1) (5) (27)
+    2300044: Body1 (1) (1) (5) (3)
+    2300046: Body1 (1) (1) (5) (4)
+    2300048: Body1 (1) (1) (5) (5)
+    2300050: Body1 (1) (1) (5) (6)
+    2300052: Body1 (1) (1) (5) (7)
+    2300054: Body1 (1) (1) (5) (8)
+    2300056: Body1 (1) (1) (5) (9)
+    2300058: Body1 (1) (4)
+    2300060: Body1 (1) (4) (1)
+    2300062: Body1 (1) (4) (2)
+    2300064: Body1 (1) (4) (3)
+    2300066: Body1 (1) (4) (4)
+    2300068: Body1 (1) (5)
+    2300070: Body1 (1) (6)
+    2300072: Body1 (1) (7)
+    2300074: Body1 (1) (8)
+    2300076: Body1 (1) (8) (1)
+    2300078: Body1 (1) (8) (2)
+    2300080: Body1 (1) (8) (3)
+    2300082: Body1 (1) (8) (4)
+    2300084: Body1 (1) (8) (5)
+    2300086: Body1 (1) (8) (6)
+    2300088: Body1 (1) (9)
+    2300090: Body1 (1) (9) (1)
+    2300092: Body1 (1) (9) (2)
+    2300094: Body1 (1) (9) (3)
+    2300096: Body1 (1) (9) (4)
+    2300098: Body100
+    2300100: Body101
+    2300102: Body102
+    2300104: Body103
+    2300106: Body104
+    2300108: Body105
+    2300110: Body106
+    2300112: Body107
+    2300114: Body108
+    2300116: Body109
+    2300118: Body110
+    2300120: Body111
+    2300122: Body112
+    2300124: Body113
+    2300126: Body114
+    2300128: Body115
+    2300130: Body116
+    2300132: Body117
+    2300134: Body118
+    2300136: Body119
+    2300138: Body120
+    2300140: Body121
+    2300142: Body122
+    2300144: Body123
+    2300146: Body124
+    2300148: Body125
+    2300150: Body95
+    2300152: Body96
+    2300154: Body97
+    2300156: Body98
+    2300158: Body99
+    3300000: Body1
+    3300002: Body1 (1) (1) (5)
+    3300004: Body1 (1) (1) (5) (1)
+    3300006: Body1 (1) (1) (5) (10)
+    3300008: Body1 (1) (1) (5) (11)
+    3300010: Body1 (1) (1) (5) (12)
+    3300012: Body1 (1) (1) (5) (13)
+    3300014: Body1 (1) (1) (5) (14)
+    3300016: Body1 (1) (1) (5) (15)
+    3300018: Body1 (1) (1) (5) (16)
+    3300020: Body1 (1) (1) (5) (17)
+    3300022: Body1 (1) (1) (5) (18)
+    3300024: Body1 (1) (1) (5) (19)
+    3300026: Body1 (1) (1) (5) (2)
+    3300028: Body1 (1) (1) (5) (20)
+    3300030: Body1 (1) (1) (5) (21)
+    3300032: Body1 (1) (1) (5) (22)
+    3300034: Body1 (1) (1) (5) (23)
+    3300036: Body1 (1) (1) (5) (24)
+    3300038: Body1 (1) (1) (5) (25)
+    3300040: Body1 (1) (1) (5) (26)
+    3300042: Body1 (1) (1) (5) (27)
+    3300044: Body1 (1) (1) (5) (3)
+    3300046: Body1 (1) (1) (5) (4)
+    3300048: Body1 (1) (1) (5) (5)
+    3300050: Body1 (1) (1) (5) (6)
+    3300052: Body1 (1) (1) (5) (7)
+    3300054: Body1 (1) (1) (5) (8)
+    3300056: Body1 (1) (1) (5) (9)
+    3300058: Body1 (1) (4)
+    3300060: Body1 (1) (4) (1)
+    3300062: Body1 (1) (4) (2)
+    3300064: Body1 (1) (4) (3)
+    3300066: Body1 (1) (4) (4)
+    3300068: Body1 (1) (5)
+    3300070: Body1 (1) (6)
+    3300072: Body1 (1) (7)
+    3300074: Body1 (1) (8)
+    3300076: Body1 (1) (8) (1)
+    3300078: Body1 (1) (8) (2)
+    3300080: Body1 (1) (8) (3)
+    3300082: Body1 (1) (8) (4)
+    3300084: Body1 (1) (8) (5)
+    3300086: Body1 (1) (8) (6)
+    3300088: Body1 (1) (9)
+    3300090: Body1 (1) (9) (1)
+    3300092: Body1 (1) (9) (2)
+    3300094: Body1 (1) (9) (3)
+    3300096: Body1 (1) (9) (4)
+    3300098: Body100
+    3300100: Body101
+    3300102: Body102
+    3300104: Body103
+    3300106: Body104
+    3300108: Body105
+    3300110: Body106
+    3300112: Body107
+    3300114: Body108
+    3300116: Body109
+    3300118: Body110
+    3300120: Body111
+    3300122: Body112
+    3300124: Body113
+    3300126: Body114
+    3300128: Body115
+    3300130: Body116
+    3300132: Body117
+    3300134: Body118
+    3300136: Body119
+    3300138: Body120
+    3300140: Body121
+    3300142: Body122
+    3300144: Body123
+    3300146: Body124
+    3300148: Body125
+    3300150: Body95
+    3300152: Body96
+    3300154: Body97
+    3300156: Body98
+    3300158: Body99
+    4300000: Body1
+    4300002: Body1 (1) (4)
+    4300004: Body1 (1) (5)
+    4300006: Body1 (1) (6)
+    4300008: Body1 (1) (7)
+    4300010: Body1 (1) (8)
+    4300012: Body1 (1) (9)
+    4300014: Body1 (1) (1) (5)
+    4300016: Body1 (1) (1) (5) (1)
+    4300018: Body1 (1) (1) (5) (2)
+    4300020: Body1 (1) (1) (5) (3)
+    4300022: Body1 (1) (1) (5) (4)
+    4300024: Body1 (1) (1) (5) (5)
+    4300026: Body1 (1) (1) (5) (6)
+    4300028: Body1 (1) (1) (5) (7)
+    4300030: Body1 (1) (1) (5) (8)
+    4300032: Body1 (1) (1) (5) (9)
+    4300034: Body1 (1) (1) (5) (10)
+    4300036: Body1 (1) (1) (5) (11)
+    4300038: Body1 (1) (1) (5) (12)
+    4300040: Body1 (1) (1) (5) (13)
+    4300042: Body1 (1) (1) (5) (14)
+    4300044: Body1 (1) (1) (5) (15)
+    4300046: Body1 (1) (1) (5) (16)
+    4300048: Body1 (1) (1) (5) (17)
+    4300050: Body1 (1) (1) (5) (18)
+    4300052: Body1 (1) (1) (5) (19)
+    4300054: Body1 (1) (1) (5) (20)
+    4300056: Body1 (1) (1) (5) (21)
+    4300058: Body1 (1) (1) (5) (22)
+    4300060: Body1 (1) (1) (5) (23)
+    4300062: Body1 (1) (1) (5) (24)
+    4300064: Body1 (1) (1) (5) (25)
+    4300066: Body1 (1) (1) (5) (26)
+    4300068: Body1 (1) (1) (5) (27)
+    4300070: Body1 (1) (4) (1)
+    4300072: Body1 (1) (4) (2)
+    4300074: Body1 (1) (4) (3)
+    4300076: Body1 (1) (4) (4)
+    4300078: Body1 (1) (9) (1)
+    4300080: Body1 (1) (9) (2)
+    4300082: Body1 (1) (9) (3)
+    4300084: Body1 (1) (9) (4)
+    4300086: Body1 (1) (8) (1)
+    4300088: Body1 (1) (8) (2)
+    4300090: Body1 (1) (8) (3)
+    4300092: Body1 (1) (8) (4)
+    4300094: Body1 (1) (8) (5)
+    4300096: Body1 (1) (8) (6)
+    4300098: Body95
+    4300100: Body96
+    4300102: Body97
+    4300104: Body98
+    4300106: Body99
+    4300108: Body100
+    4300110: Body101
+    4300112: Body102
+    4300114: Body103
+    4300116: Body104
+    4300118: Body105
+    4300120: Body106
+    4300122: Body107
+    4300124: Body108
+    4300126: Body109
+    4300128: Body110
+    4300130: Body111
+    4300132: Body112
+    4300134: Body113
+    4300136: Body114
+    4300138: Body115
+    4300140: Body116
+    4300142: Body117
+    4300144: Body118
+    4300146: Body119
+    4300148: Body120
+    4300150: Body121
+    4300152: Body122
+    4300154: Body123
+    4300156: Body124
+    4300158: Body125
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
