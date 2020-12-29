@@ -9,6 +9,6 @@ public class MakeGreen : MonoBehaviour
 
     public void makeGreen()
     {
-        mr.material.color = Color.green;
+        mr.material.color = Color.red;
     }
 }

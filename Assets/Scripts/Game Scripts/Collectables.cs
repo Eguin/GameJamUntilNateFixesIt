@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Collectables : MonoBehaviour
 {
@@ -15,7 +15,7 @@ public class Collectables : MonoBehaviour
     float distanceFromPlayer;
 
     [SerializeField]
-    Text itemsList;
+    TextMeshProUGUI itemsList;
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +23,7 @@ public class Collectables : MonoBehaviour
         itemsList.text = "";
         for(int i = 0; i < objectsToCollect.Count ; i++)
         {
-            itemsList.text += objectsToCollect[i].gameObject.ToString() + "\n";
+            itemsList.text += objectsToCollect[i].gameObject.name + "\n";
             objectsToCollect[i].setPlayer(player);
             objectsToCollect[i].setDistance(distanceFromPlayer);
             objectsToCollect[i].setCollectablesScript(this);
@@ -33,12 +33,14 @@ public class Collectables : MonoBehaviour
     public void removeItem(CollectableObjects collectedObject)
     {
         objectsToCollect.Remove(collectedObject);
+        itemsList.text = "";
         for (int i = 0; i < objectsToCollect.Count; i++)
         {
-            itemsList.text += objectsToCollect[i].gameObject.ToString() + "\n";
+            itemsList.text += objectsToCollect[i].gameObject.name + "\n";
         }
         if (objectsToCollect.Count == 0)
         {
+            Debug.Log("All objects collected!");
             //end level
         }
     }

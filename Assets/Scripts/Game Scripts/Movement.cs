@@ -26,8 +26,8 @@ public class Movement : MonoBehaviour
     //[SerializeField]
     //GameObject point;
 
-    //[SerializeField]
-    //GameObject cam;
+    [SerializeField]
+    GameObject cam;
 
 
     // Start is called before the first frame update
@@ -41,29 +41,31 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        cam.transform.position = new Vector3(transform.position.x, cam.transform.position.y, transform.position.z);
+
         float time = Time.deltaTime;
         float theta = transform.eulerAngles.y;
 
         if (Input.GetKey("w"))
         {
-            transform.eulerAngles = new Vector3(0, Mathf.Lerp(theta, 0, .2f), 0);
+            transform.eulerAngles = new Vector3(0, Mathf.PI / 2f, 0);
         }
 
         if (Input.GetKey("a"))
         {
-            transform.eulerAngles = new Vector3(0, Mathf.Lerp(theta, (Mathf.PI / 2), .2f), 0);
+            transform.eulerAngles = new Vector3(0, Mathf.PI, 0);
         }
 
         if (Input.GetKey("d"))
         {
-            this.transform.eulerAngles = new Vector3(0, Mathf.Lerp(theta, ((Mathf.PI / 2) * 3), .2f), 0);
+            this.transform.eulerAngles = new Vector3(0, 0, 0);
         }
         if (Input.GetKey("s"))
         {
-            this.transform.eulerAngles = new Vector3(0, Mathf.Lerp(theta, Mathf.PI, .2f), 0);
+            this.transform.eulerAngles = new Vector3(0, 3f * Mathf.PI / 2f, 0);
         }
 
-
+        //Lerp(theta, (Mathf.PI / 2), .2f)
 
 
         //cam.transform.position = new Vector3(transform.position.x - 7f, transform.position.y + 4.23f, transform.position.z);
@@ -72,7 +74,7 @@ public class Movement : MonoBehaviour
 
         if (Input.GetKey("w") || Input.GetKey("a") || Input.GetKey("s") || Input.GetKey("d"))
         {
-            rb.AddForce(Mathf.Cos(theta)*speed*time, 0, Mathf.Sin(theta)*speed*time);
+            rb.AddForce(Mathf.Cos(theta) * speed * time, 0, Mathf.Sin(theta) * speed * time);
         }
 
 
@@ -95,8 +97,6 @@ public class Movement : MonoBehaviour
         {
             rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeed);
         }
-
-
 
     }
 }
