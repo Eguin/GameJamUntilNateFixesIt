@@ -45,7 +45,6 @@ public class Collectables : MonoBehaviour
         if (objectsToCollect.Count == 0)
         {
             Debug.Log("All objects collected!");
-            SaveFileHandler.SaveGame();
             onWin.Invoke();
             //end level
         }

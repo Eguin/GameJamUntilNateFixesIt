@@ -10,7 +10,7 @@ public class SaveFileHandler : MonoBehaviour
 {
     public static SaveClass currentSaveData=new SaveClass();
 
-    //[MenuItem("Save File Handler/Reset Data")]
+    [MenuItem("Save File Handler/Reset Data")]
     public static void ResetData()
     {
         BinaryFormatter bf = new BinaryFormatter();
@@ -29,6 +29,7 @@ public class SaveFileHandler : MonoBehaviour
             FileStream file = File.Create(Application.persistentDataPath
                          + "/Save.data");
             SaveClass data = new SaveClass();
+            data = currentSaveData;
             if (ScoreHandler.infected < currentSaveData.highScores[LevelHandler.currentLevel])
             {
                 data.highScores[LevelHandler.currentLevel] = ScoreHandler.infected;
@@ -37,10 +38,10 @@ public class SaveFileHandler : MonoBehaviour
             {
                 data.highScores[LevelHandler.currentLevel] = currentSaveData.highScores[LevelHandler.currentLevel];
             }
-            currentSaveData = data;
             bf.Serialize(file, data);
             file.Close();
             Debug.Log("Game data saved!");
+            LoadGame();
         }
         else
         {
@@ -51,6 +52,47 @@ public class SaveFileHandler : MonoBehaviour
             bf.Serialize(file, data);
             file.Close();
             Debug.Log("New Game data saved!");
+            LoadGame();
+        }
+    }
+
+    public static void SaveGame(int level)
+    {
+        if (File.Exists(Application.persistentDataPath + "/Save.data"))
+        {
+            BinaryFormatter bf = new BinaryFormatter();
+            FileStream file = File.Create(Application.persistentDataPath
+                         + "/Save.data");
+            SaveClass data = new SaveClass();
+            data = currentSaveData;
+            if (ScoreHandler.infected < currentSaveData.highScores[LevelHandler.currentLevel])
+            {
+                data.highScores[LevelHandler.currentLevel] = ScoreHandler.infected;
+            }
+            else
+            {
+                data.highScores[LevelHandler.currentLevel] = currentSaveData.highScores[LevelHandler.currentLevel];
+            }
+            if (level > currentSaveData.levelUnlocked)
+            {
+                data.levelUnlocked = level;
+            }
+            bf.Serialize(file, data);
+            file.Close();
+            Debug.Log("Game data saved!");
+            LoadGame();
+        }
+        else
+        {
+            BinaryFormatter bf = new BinaryFormatter();
+            FileStream file = File.Create(Application.persistentDataPath + "/Save.data");
+            SaveClass data = new SaveClass();
+            data.highScores[LevelHandler.currentLevel] = ScoreHandler.infected;
+            data.levelUnlocked = level;
+            bf.Serialize(file, data);
+            file.Close();
+            Debug.Log("New Game data saved!");
+            LoadGame();
         }
     }
 
@@ -69,14 +111,14 @@ public class SaveFileHandler : MonoBehaviour
             Debug.LogError("There is no save data!");
     }
 
-    public static void unlockLevel(int level)
+    /*public static void unlockLevel(int level)
     {
         if (File.Exists(Application.persistentDataPath+ "/Save.data"))
         {
             BinaryFormatter bf = new BinaryFormatter();
             FileStream file = File.Create(Application.persistentDataPath+ "/Save.data");
             SaveClass data = new SaveClass();
-            currentSaveData = data;
+            data=currentSaveData;
             if (level > currentSaveData.levelUnlocked)
             {
                 data.levelUnlocked = level;
@@ -84,6 +126,7 @@ public class SaveFileHandler : MonoBehaviour
             bf.Serialize(file, data);
             file.Close();
             Debug.Log("Unlocked Level "+level.ToString());
+            LoadGame();
         }
         else
         {
@@ -94,7 +137,13 @@ public class SaveFileHandler : MonoBehaviour
             bf.Serialize(file, data);
             file.Close();
             Debug.Log("New Game data saved! With Level Unlocked: " +level.ToString());
+            LoadGame();
         }
+    }*/
+
+    public void saveGameInstance()
+    {
+        SaveGame();
     }
 
     private void Awake()
