@@ -6,8 +6,16 @@ public class LevelHandler : MonoBehaviour {
     public static int currentLevel;
     public static int amountOfLevels = 100;
 
-    public void setLevel(int level)
+    [SerializeField]
+    int levelNumber;
+
+    private void Start()
     {
-        currentLevel = level;
+        currentLevel = levelNumber;
+    }
+
+    public void unlockLevel()
+    {
+        SaveFileHandler.unlockLevel(levelNumber);
     }
 }

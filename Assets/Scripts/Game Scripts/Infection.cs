@@ -25,6 +25,8 @@ public class Infection : MonoBehaviour {
     [SerializeField]
     bool isInfected=false;
 
+    bool onlyOnce=true;
+
     private void Start()
     {
         Random.InitState(System.DateTime.Now.Millisecond);
@@ -33,11 +35,12 @@ public class Infection : MonoBehaviour {
 
     private void Update()
     {
-        if (isInfected)
+        if (isInfected&&onlyOnce)
         {
             setInfected();
+            onlyOnce = false;
         }
-        else
+        if(!isInfected)
         {
             virusSphere.radius = gettingInfectedRadius;
         }

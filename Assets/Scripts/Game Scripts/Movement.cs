@@ -76,6 +76,11 @@ public class Movement : MonoBehaviour
         {
             rb.AddForce(Mathf.Cos(theta) * speed * time, 0, Mathf.Sin(theta) * speed * time);
         }
+        else
+        {
+            //drag force
+            rb.AddForce(-rb.velocity * drag * time);
+        }
 
 
         //wind force
@@ -88,9 +93,6 @@ public class Movement : MonoBehaviour
         }
 
         rb.AddForce(windForce*time);
-
-        //drag force
-        rb.AddForce(-rb.velocity * drag *time);
 
         //keeps the speed at a max
         if (Vector3.Magnitude(rb.velocity) > maxSpeed)

@@ -13,7 +13,7 @@ public class CollectableObjects : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Vector3.Distance(transform.position, player.transform.position)<distanceFromObject)
+        if (Vector3.Distance(transform.position, player.transform.position) < distanceFromObject)
         {
             collected();
         }

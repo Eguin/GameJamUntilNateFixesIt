@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ScoreHandler : MonoBehaviour {
-    public static int infected;
+    public static int infected=0;
 
     /*
      * Only put this script on an object in the scene if you want the score to reset at the start of the scene

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Collectables : MonoBehaviour
 {
@@ -16,6 +17,9 @@ public class Collectables : MonoBehaviour
 
     [SerializeField]
     TextMeshProUGUI itemsList;
+
+    [SerializeField]
+    UnityEvent onWin;
 
     // Start is called before the first frame update
     void Start()
@@ -41,6 +45,8 @@ public class Collectables : MonoBehaviour
         if (objectsToCollect.Count == 0)
         {
             Debug.Log("All objects collected!");
+            SaveFileHandler.SaveGame();
+            onWin.Invoke();
             //end level
         }
     }

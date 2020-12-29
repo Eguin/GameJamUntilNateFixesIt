@@ -44,7 +44,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -734,6 +734,9 @@ MonoBehaviour:
   destinations:
   - {x: 30, y: 0.6, z: 20}
   - {x: -20, y: 0.6, z: -25}
+  randomizeTwoPositionsInRange: 0
+  corner1: {x: 0, y: 0, z: 0}
+  corner2: {x: 0, y: 0, z: 0}
 --- !u!114 &1339924574
 MonoBehaviour:
   m_ObjectHideFlags: 0
