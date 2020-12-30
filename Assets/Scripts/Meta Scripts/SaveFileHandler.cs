@@ -98,17 +98,20 @@ public class SaveFileHandler : MonoBehaviour
 
     public static void LoadGame()
     {
-        if (File.Exists(Application.persistentDataPath+ "/Save.data"))
+        if (File.Exists(Application.persistentDataPath + "/Save.data"))
         {
             BinaryFormatter bf = new BinaryFormatter();
-            FileStream file =File.Open(Application.persistentDataPath+ "/Save.data", FileMode.Open);
+            FileStream file = File.Open(Application.persistentDataPath + "/Save.data", FileMode.Open);
             SaveClass data = (SaveClass)bf.Deserialize(file);
             file.Close();
             currentSaveData = data;
             Debug.Log("Game data loaded!");
         }
         else
+        {
             Debug.LogError("There is no save data!");
+            ResetData();
+        }
     }
 
     /*public static void unlockLevel(int level)

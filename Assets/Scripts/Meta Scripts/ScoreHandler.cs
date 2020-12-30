@@ -7,7 +7,7 @@ public class ScoreHandler : MonoBehaviour {
     public static int infected=0;
 
     [SerializeField]
-    float maxInfected=10;
+    float maxInfected=100;
 
     [SerializeField]
     UnityEvent onLoose;

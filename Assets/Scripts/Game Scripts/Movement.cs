@@ -44,7 +44,7 @@ public class Movement : MonoBehaviour
         cam.transform.position = new Vector3(transform.position.x, cam.transform.position.y, transform.position.z);
 
         float time = Time.deltaTime;
-        float theta = transform.eulerAngles.y;
+        /*float theta = transform.eulerAngles.y;
 
         if (Input.GetKey("w"))
         {
@@ -75,8 +75,15 @@ public class Movement : MonoBehaviour
         if (Input.GetKey("w") || Input.GetKey("a") || Input.GetKey("s") || Input.GetKey("d"))
         {
             rb.AddForce(Mathf.Cos(theta) * speed * time, 0, Mathf.Sin(theta) * speed * time);
-        }
-        else
+        }*/
+
+        float xMovement = speed * time * Input.GetAxis("Horizontal");
+        float yMovement = speed * time * Input.GetAxis("Vertical");
+
+        rb.AddForce(xMovement, 0, yMovement);
+
+
+        if (xMovement==0 && yMovement==0)
         {
             //drag force
             rb.AddForce(-rb.velocity * drag * time);

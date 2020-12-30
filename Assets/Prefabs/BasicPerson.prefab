@@ -565,8 +565,8 @@ GameObject:
   - component: {fileID: 4273060933719194298}
   - component: {fileID: 4273060933719194297}
   - component: {fileID: 4273060933719194296}
-  - component: {fileID: 1621926936261970513}
   - component: {fileID: 4273060933719194295}
+  - component: {fileID: -4811750935192049233}
   m_Layer: 8
   m_Name: BasicPerson
   m_TagString: Untagged
@@ -653,15 +653,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a59e84975e2d5d42a510eda4b31d1af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  virusSphere: {fileID: 0}
+  virusSphere: {fileID: 4273060933719194299}
   gettingInfectedRadius: 3
   infectingRadius: 4
   randomVariableOffset: 0.003
   onInfected:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1621926936261970513}
-        m_MethodName: makeGreen
+      - m_Target: {fileID: -4811750935192049233}
+        m_MethodName: setColorTo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -672,19 +672,6 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   isInfected: 0
---- !u!114 &1621926936261970513
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1621926936261970512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3749696b39197844a1e9ef4a08825bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mr: {fileID: 7348697426784076503}
 --- !u!114 &4273060933719194295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -703,6 +690,21 @@ MonoBehaviour:
   randomizeTwoPositionsInRange: 0
   corner1: {x: 0, y: 0, z: 0}
   corner2: {x: 0, y: 0, z: 0}
+--- !u!114 &-4811750935192049233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621926936261970512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44f843d144cb83c49842edf9ecb3d00c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsToChange:
+  - {fileID: 3253794887160623559}
+  colorToChangeTo: {r: 1, g: 0, b: 0, a: 0}
 --- !u!1 &1695330212145021599
 GameObject:
   m_ObjectHideFlags: 0
