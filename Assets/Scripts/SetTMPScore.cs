@@ -13,6 +13,6 @@ public class SetTMPScore : MonoBehaviour
     void Start()
     {
         tmp = GetComponent<TextMeshProUGUI>();
-        tmp.text = "Your Score: " + ScoreHandler.infected.ToString();
+        tmp.text = "Level: " + (LevelHandler.currentLevel+1).ToString() + " Your Score: " + ScoreHandler.infected.ToString();
     }
 }

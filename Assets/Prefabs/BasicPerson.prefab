@@ -684,7 +684,7 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
   isInfected: 0
-  canDie: 1
+  canDie: 0
   timeUntilDeath: 10
   explosion: {fileID: 3053460759301316222, guid: f4d76343936850b44986eb54287c5b8a,
     type: 3}

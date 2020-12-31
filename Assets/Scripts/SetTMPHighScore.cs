@@ -11,7 +11,7 @@ public class SetTMPHighScore : MonoBehaviour
     void Start()
     {
         tmp = GetComponent<TextMeshProUGUI>();
-        tmp.text = "High Score: " + SaveFileHandler.currentSaveData.highScores[LevelHandler.currentLevel].ToString();
+        tmp.text = "Level: "+(LevelHandler.currentLevel+1).ToString()+" High Score: " + SaveFileHandler.currentSaveData.highScores[LevelHandler.currentLevel].ToString();
     }
 
 }

@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 
+[RequireComponent(typeof(AudioSource))]
 public class Collectables : MonoBehaviour
 {
     [SerializeField]
@@ -20,6 +21,8 @@ public class Collectables : MonoBehaviour
 
     [SerializeField]
     UnityEvent onWin;
+    
+    AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
@@ -32,10 +35,12 @@ public class Collectables : MonoBehaviour
             objectsToCollect[i].setDistance(distanceFromPlayer);
             objectsToCollect[i].setCollectablesScript(this);
         }
+        audioSource = GetComponent<AudioSource>();
     }
 
     public void removeItem(CollectableObjects collectedObject)
     {
+        audioSource.Play();
         objectsToCollect.Remove(collectedObject);
         itemsList.text = "";
         for (int i = 0; i < objectsToCollect.Count; i++)

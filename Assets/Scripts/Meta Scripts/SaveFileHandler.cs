@@ -10,7 +10,7 @@ public class SaveFileHandler : MonoBehaviour
 {
     public static SaveClass currentSaveData=new SaveClass();
 
-    [MenuItem("Save File Handler/Reset Data")]
+    //[MenuItem("Save File Handler/Reset Data")]
     public static void ResetData()
     {
         BinaryFormatter bf = new BinaryFormatter();
