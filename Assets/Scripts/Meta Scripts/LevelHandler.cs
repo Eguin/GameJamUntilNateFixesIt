@@ -16,6 +16,6 @@ public class LevelHandler : MonoBehaviour {
 
     public void unlockLevel()
     {
-        SaveFileHandler.SaveGame(levelNumber);
+        SaveFileHandler.SaveGame(levelNumber+1);
     }
 }

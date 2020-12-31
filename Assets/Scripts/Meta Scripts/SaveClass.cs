@@ -12,7 +12,7 @@ public class SaveClass {
         {
             highScores[i] = 9999;
         }
-        levelUnlocked = 1;
+        levelUnlocked = 0;
     }
 
 }
