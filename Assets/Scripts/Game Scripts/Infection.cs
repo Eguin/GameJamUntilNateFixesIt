@@ -25,6 +25,15 @@ public class Infection : MonoBehaviour {
     [SerializeField]
     bool isInfected=false;
 
+    [SerializeField]
+    bool canDie;
+
+    [SerializeField]
+    float timeUntilDeath;
+
+    [SerializeField]
+    GameObject explosion;
+
     private void Start()
     {
         Random.InitState(System.DateTime.Now.Millisecond);
@@ -59,10 +68,22 @@ public class Infection : MonoBehaviour {
         //gameObject.GetComponent<Renderer>().material.color = Color.red;
         onInfected.Invoke();
         ScoreHandler.infected++;
+        if (canDie)
+        {
+            StartCoroutine(explode());
+        }
     }
 
     public bool getInfected()
     {
         return isInfected;
+    }
+
+    IEnumerator explode()
+    {
+        yield return new WaitForSeconds(timeUntilDeath);
+        GameObject pe=Instantiate(explosion);
+        pe.transform.position = transform.position;
+        Destroy(gameObject);
     }
 }
