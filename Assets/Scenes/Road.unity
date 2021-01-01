@@ -8014,6 +8014,10 @@ MonoBehaviour:
   - {fileID: 8028077018200012750, guid: d44f2886edbb8da4683605d0d65c5a90, type: 3}
   - {fileID: 5835486653232891950, guid: 02fba0ccb93117247885c6170d3611cf, type: 3}
   - {fileID: 4061011840845847032, guid: 9cff9c62e0a56a84cb6237b050c6767e, type: 3}
+  - {fileID: 3909194051453277088, guid: ce53d1d1d0b7c89469949b745a26ba49, type: 3}
+  - {fileID: 6581085266574183682, guid: 12412ffcdf5db6642b0b658381371acf, type: 3}
+  - {fileID: 6978004291102098317, guid: dd003e4f904bb314dbd53b3a42a01e14, type: 3}
+  - {fileID: 4232773057181513018, guid: cd064c870f07ff24f89a4888796a3001, type: 3}
   numberOfObjectsInScene: 5
   corner1: {x: -25.7, y: 2.66, z: -9.4}
   corner2: {x: 47.1, y: 2.66, z: 215.9}

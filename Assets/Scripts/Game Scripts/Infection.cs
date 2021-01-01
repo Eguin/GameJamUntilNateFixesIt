@@ -38,6 +38,10 @@ public class Infection : MonoBehaviour {
     {
         Random.InitState(System.DateTime.Now.Millisecond);
         virusSphere.radius = gettingInfectedRadius;
+        if (isInfected)
+        {
+            virusSphere.radius = infectingRadius;
+        }
     }
 
     private void OnTriggerStay(Collider other)
