@@ -6,7 +6,7 @@ using UnityEngine.AI;
 [RequireComponent(typeof(NavMeshAgent))]
 public class SetPersonDestination : MonoBehaviour
 {
-    static int randomSeed = 0;
+    public static int randomSeed = 0;
     NavMeshAgent nma;
 
     [SerializeField]

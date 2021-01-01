@@ -114,6 +114,41 @@ public class SaveFileHandler : MonoBehaviour
         }
     }
 
+    public static void SaveEndlessMode()
+    {
+        if (File.Exists(Application.persistentDataPath + "/Save.data"))
+        {
+            BinaryFormatter bf = new BinaryFormatter();
+            FileStream file = File.Create(Application.persistentDataPath
+                         + "/Save.data");
+            SaveClass data = new SaveClass();
+            data = currentSaveData;
+            if (ScoreHandler.amountCollected > currentSaveData.endlessHighScore)
+            {
+                data.endlessHighScore = ScoreHandler.amountCollected;
+            }
+            else
+            {
+                data.endlessHighScore = currentSaveData.endlessHighScore;
+            }
+            bf.Serialize(file, data);
+            file.Close();
+            Debug.Log("Game data saved!");
+            LoadGame();
+        }
+        else
+        {
+            BinaryFormatter bf = new BinaryFormatter();
+            FileStream file = File.Create(Application.persistentDataPath + "/Save.data");
+            SaveClass data = new SaveClass();
+            data.endlessHighScore = currentSaveData.endlessHighScore;
+            bf.Serialize(file, data);
+            file.Close();
+            Debug.Log("New Game data saved!");
+            LoadGame();
+        }
+    }
+
     /*public static void unlockLevel(int level)
     {
         if (File.Exists(Application.persistentDataPath+ "/Save.data"))
@@ -147,6 +182,11 @@ public class SaveFileHandler : MonoBehaviour
     public void saveGameInstance()
     {
         SaveGame();
+    }
+
+    public void saveEndlessInstance()
+    {
+        SaveEndlessMode();
     }
 
     private void Awake()

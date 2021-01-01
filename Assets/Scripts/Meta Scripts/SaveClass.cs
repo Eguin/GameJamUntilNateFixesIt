@@ -5,6 +5,7 @@ using UnityEngine;
 public class SaveClass {
     public int[] highScores=new int[LevelHandler.amountOfLevels];
     public int levelUnlocked;
+    public int endlessHighScore;
 
     public SaveClass()
     {
@@ -13,6 +14,7 @@ public class SaveClass {
             highScores[i] = 9999;
         }
         levelUnlocked = 0;
+        endlessHighScore = 0;
     }
 
 }

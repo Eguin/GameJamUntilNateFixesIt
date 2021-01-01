@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LevelHandler : MonoBehaviour {
     public static int currentLevel;
-    public static int amountOfLevels = 100;
+    public static int amountOfLevels = 4;
 
     [SerializeField]
     int levelNumber;

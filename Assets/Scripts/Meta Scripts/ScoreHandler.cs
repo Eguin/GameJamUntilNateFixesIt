@@ -5,9 +5,11 @@ using UnityEngine.Events;
 
 public class ScoreHandler : MonoBehaviour {
     public static int infected=0;
+    public static int amountCollected;
+    static int maxInfectedStatic;
 
     [SerializeField]
-    float maxInfected=100;
+    int maxInfected=100;
 
     [SerializeField]
     UnityEvent onLoose;
@@ -20,6 +22,8 @@ public class ScoreHandler : MonoBehaviour {
     // Use this for initialization
     void Start () {
         infected = 0;
+        amountCollected = 0;
+        maxInfectedStatic = maxInfected;
 	}
 
     private void Update()
@@ -28,5 +32,10 @@ public class ScoreHandler : MonoBehaviour {
         {
             onLoose.Invoke();
         }
+    }
+
+    public static int getMaxInfected()
+    {
+        return maxInfectedStatic;
     }
 }

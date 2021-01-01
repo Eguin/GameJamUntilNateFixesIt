@@ -36,6 +36,7 @@ public class CollectableObjects : MonoBehaviour
 
     void collected()
     {
+        ScoreHandler.amountCollected++;
         collectableScript.removeItem(this);
         Destroy(gameObject);
     }
